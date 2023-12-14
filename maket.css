@@ -120,6 +120,7 @@ body {
     display: flex;
     margin-left: 16px;
     border: none;
+    background-color: white;
 }
 
 .button__image {
