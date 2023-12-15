@@ -51,6 +51,10 @@ body {
     display: none;
 }
 
+.menu-item__text--hidden {
+    display: none;
+}
+
 .main-info {
     background-color: #F8F8F8;
 }
@@ -202,7 +206,9 @@ body {
         margin-left: 16px;
     }
 
-    .nav-item:nth-child(4) {
+    .nav-item:nth-child(4), 
+    .nav-item:nth-child(6), 
+    .nav-item:nth-child(7) {
         display: none;
     }
 
@@ -238,4 +244,13 @@ body {
         width: 360px;
         border-radius: 6px;
     }
+}
+
+@media (min-width: 1120px) {
+    body {
+        width: 1120px;
+        height: 535px;
+    }
+
+
 }
