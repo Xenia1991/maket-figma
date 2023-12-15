@@ -188,7 +188,8 @@ body {
     .nav {
         width: 768px;
         justify-content: flex-start;
-        gap: 25px;
+        gap: 17px;
+        margin-top: 40px;
     }
 
     .nav-item {
@@ -208,5 +209,33 @@ body {
     .description-block {
         display: flex;
         flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .text-block {
+        margin-left: 24px;
+    }
+    
+    .text {
+        width: 312px;
+        height: 150px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    .button {
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .image {
+        margin-left: 48px;
+    }
+
+    .image img {
+        width: 360px;
+        border-radius: 6px;
     }
 }
