@@ -9,37 +9,39 @@
 <body>
     <main class="side-bar-container">
        <header class="services">
-            <nav class="navigation-links"> 
-                <a href="#"><img src="/images/close.png" alt="Закрыть сайд-бар"></a>
-                <a href="#"><img src="/images/Group.png" alt="Логотип компании"></a>
-                <a href="#"><img src="/images/search.png" alt="Поиск по сайту"></a>
-            </nav>
+            <ul class="navigation-links">
+                <li class="navigation-links__item"><img src="/images/close.png" alt="Закрыть сайд-бар"></li>
+                <li class="navigation-links__item"><img src="/images/Group.png" alt="Логотип компании"></li>
+                <li class="navigation-links__item"><img src="/images/search.png" alt="Поиск по сайту" class="navigation-links__third-link"></li>  
+            </ul>
             <nav class="navigation-list">
-                <ul>
-                    <li><a href="#">Ремонт техники</a></li>
-                    <li><a href="#">Услуги и сервисы</a></li>
-                    <li><a href="#">Корпоративным клиентам</a></li>
-                    <li><a href="#">Продавцам техники</a></li>
-                    <li><a href="#">Партнерам</a></li>
-                    <li><a href="#">Производителям</a></li>
-                    <li><a href="#">Наши сервисные центры</a></li>
-                    <li><a href="#">Контакты</a></li>
+                <ul class="services-list">
+                    <li class="services-list__item services-list__item--active"><a class="services-list__link services-list__link--active" href="#">Ремонт техники</a></li>
+                    <li class="services-list__item"><a class="services-list__link" href="#">Услуги и сервисы</a></li>
+                    <li class="services-list__item"><a class="services-list__link" href="#">Корпоративным клиентам</a></li>
+                    <li class="services-list__item"><a class="services-list__link" href="#">Продавцам техники</a></li>
+                    <li class="services-list__item"><a class="services-list__link" href="#">Партнерам</a></li>
+                    <li class="services-list__item"><a class="services-list__link" href="#">Производителям</a></li>
+                    <li class="services-list__item"><a class="services-list__link" href="#">Наши сервисные центры</a></li>
+                    <li class="services-list__item"><a class="services-list__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
         </header>
         <footer class="contacts">
-            <nav class="contact-links">
-                <a href="#"><img src="/images/call.png" alt="Позвонить нам"></a>
-                <a href="#"><img src="/images/chat.png" alt="Написать нам"></a>
-                <a href="#"><img src="/images/profile.png" alt="Профиль"></a>
-            </nav>
-            <p>mail@cps.com</p>
-            <p>8 800 890 8900</p>
-            <nav class="lang-navigation">
-                <a href="#"><span>RU</span></a>
-                <a href="#"><span>EN</span></a>
-                <a href="#"><span>CH</span></a>
-            </nav>
+            <ul class="contact-links">
+                <li class="contact-links__item"><img src="/images/call.png" alt="Позвонить нам"></li>
+                <li class="contact-links__item"><img src="/images/chat.png" alt="Написать нам"></li>
+                <li class="contact-links__item"><img src="/images/profile.png" alt="Профиль"></li>
+            </ul>
+            <section class="contact-info"> 
+                <p class="contact-info__mail">mail@cps.com</p>
+                <p class="contact-info__phone">8 800 890 8900</p>
+            </section>
+            <ul class="lang-navigation">
+                <li class="lang-navigation__lang-link lang-navigation__lang-link--active"><span>ru</span></li>
+                <li class="lang-navigation__lang-link"><span>en</span></li>
+                <li class="lang-navigation__lang-link"><span>ch</span></li>
+            </ul>
         </footer> 
     </main>
 </body>
