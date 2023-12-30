@@ -37,11 +37,13 @@ body {
     padding-left: 25px;
     padding-top: 25px;
     padding-right: 25px;
+    margin: 0;
     justify-content: left;
     gap: 15px;
+    list-style: none;
 }
 
-.navigation-links a:hover {
+.navigation-links__item:hover {
     transform: scale(1.1); 
     transition-duration: 1s;
     transition-timing-function: ease-in;
@@ -106,9 +108,10 @@ body {
     padding-right: 25px;
     justify-content: left;
     gap: 15px; 
+    list-style: none;
 }
 
-.contact-links a:hover {
+.contact-links__item:hover {
     transform: scale(1.1) rotate(360deg); 
     transition-duration: 1.5s;
     transition-timing-function: ease-in;
@@ -131,8 +134,8 @@ body {
 
 .lang-navigation {
     display: inline-block;
-    margin-left: 25px;
     margin-top: 40px;
+    padding-left: 20px;
 }
 
 .lang-navigation__lang-link {
