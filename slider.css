@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Medium.woff') format('woff'),
+    url('font/TTLakes-Medium.ttf') format('truetype'),
+    url('font/TTLakes-Medium.eot') format('embeddedopentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Bold.woff') format('woff'),
+    url('font/TTLakes-Bold.ttf') format('truetype'),
+    url('font/TTLakes-Bold.eot') format('embeddedopentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    width: 320px;
+    height: 196px;
+    margin: 0;
+    padding: o;
+    padding-bottom: 38px;
+    font-family: "TTLakes", "Arial", serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.title {
+    width: 320px;
+    height: 80px;
+    margin: 0;
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFF 98.61%);
+}
+
+.title__content {
+    margin: 0;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7E7E82;
+}
+
+.brand-list {
+    width: 320px;
+    height: 154px;
+    display: flex;
+    background-color: #F8F8F8;
+    margin: 0;
+    padding: 16px;
+    padding-right: 0;
+    gap: 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.brand-item {
+    list-style: none;
+}
+
+.brand-item__link {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 48px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    background-color: #FFF;
+    padding: 16px;
+}
+
+.brand-item__image {
+   display: inline-block; 
+   background-image: contain;
+}
+
+.brand-item__brand-img {
+    margin-right: 40px;
+}
+
+.button {
+    display: none;
+}
