@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="maket, figma, slider">
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Slider</title>
 </head>
 <body>
@@ -15,74 +16,77 @@
                    ремонт техники различных брендов 
                 </p>
             </section>
-            <ul class="brand-list brand-list--hidden">
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/Lenovo.png" alt="Lenovo" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/Samsung.png" alt="Samsung" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/Apple.png" alt="Apple" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/ViewSonic.png" alt="ViewSonic" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/Bosch.png" alt="Bosch" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/hp.png" alt="hp" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/acer.png" alt="Acer" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/Sony.png" alt="Sony" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/Lenovo.png" alt="Lenovo" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/Samsung.png" alt="Samsung" class="brand-item__image brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
-                    </a>
-                </li>
-                <li class="brand-item">
-                    <a href="#" class="brand-item__link">
-                        <img src="/images/Apple.png" alt="Apple" class="brand-item__brand-img">
-                        <img src="/images/go.png" alt="Go link" class="brand-item__go-img">
-                    </a>
-                </li>
-            </ul>
+            <div class="slider-list">
+                <ul class="brand-list brand-list--hidden swiper-wrapper">
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/Lenovo.png" alt="Lenovo" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/Samsung.png" alt="Samsung" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/Apple.png" alt="Apple" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/ViewSonic.png" alt="ViewSonic" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/Bosch.png" alt="Bosch" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/hp.png" alt="hp" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/acer.png" alt="Acer" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/Sony.png" alt="Sony" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/Lenovo.png" alt="Lenovo" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/Samsung.png" alt="Samsung" class="brand-item__image brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__image brand-item__go-img">
+                        </a>
+                    </li>
+                    <li class="brand-item swiper-slide">
+                        <a href="#" class="brand-item__link">
+                            <img src="/images/Apple.png" alt="Apple" class="brand-item__brand-img">
+                            <img src="/images/go.png" alt="Go link" class="brand-item__go-img">
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
             <div class="button-container">
                <button class="button">
                     <img src="/images/expand.png" alt="Up" class="button__img">
@@ -93,7 +97,7 @@
             </div> 
         </main>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

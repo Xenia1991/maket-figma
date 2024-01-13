@@ -18,7 +18,11 @@
 
 .page-container {
     width: 320px;
+    height: 240px;
     margin: 0 auto;
+    background-color: #F8F8F8;
+    position: relative;
+    overflow: hidden;
 }
 
 body {
@@ -48,28 +52,20 @@ body {
 
 .brand-list {
     width: 320px;
-    height: 154px;
+    height: 170px;
     display: flex;
-    background-color: #F8F8F8;
     margin: 0;
     padding: 16px;
-    padding-right: 0;
-    gap: 16px;
-    overflow: hidden;
-    box-sizing: border-box;
 }
 
 .brand-list--hidden {
     width: 320px;
     height: 154px;
     display: flex;
-    background-color: #F8F8F8;
     margin: 0;
     padding: 16px;
-    padding-right: 0;
-    gap: 16px;
-    overflow: hidden;
     box-sizing: border-box;
+    min-width: 0;
 }
 
 .brand-item {
@@ -86,7 +82,7 @@ body {
     border-radius: 6px;
     background-color: #FFF;
     padding: 16px;
-    
+    min-width: 0;
 }
 
 .brand-item__image {
@@ -96,6 +92,14 @@ body {
 
 .button-container {
     display: none;
+}
+
+/* .brand-item:last-child {
+    gap: 30px;
+} */
+
+.swiper-pagination {
+    --swiper-pagination-top: 200px;
 }
 
 @media (min-width: 768px) {

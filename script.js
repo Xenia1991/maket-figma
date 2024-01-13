@@ -30,3 +30,12 @@ button.addEventListener ('click', function(evt) {
 
     };
 });
+
+new Swiper('.slider-list', {
+   slidesPerView: '1.2',
+   
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true, 
+   },
+})
