@@ -31,11 +31,24 @@ button.addEventListener ('click', function(evt) {
     };
 });
 
-new Swiper('.slider-list', {
+const swiper = new Swiper('.slider-list', {
    slidesPerView: '1.2',
    
    pagination: {
       el: '.swiper-pagination',
       clickable: true, 
    },
+});
+
+window.addEventListener ('resize', function() {
+
+   let screenWidth = document.querySelector('.page-container');
+   console.log(screenWidth.clientWidth);
+
+   if (screenWidth.clientWidth > 767) {
+      swiper.disable()
+      // swiper.destroy(false, true)
+   } else if (screenWidth.clientWidth <= 767) {
+      swiper.enable();
+   }
 })
