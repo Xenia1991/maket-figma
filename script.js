@@ -1,4 +1,5 @@
 let button = document.querySelector('.button');
+let swiperPage;
 
 button.addEventListener ('click', function(evt) {
     
@@ -31,24 +32,36 @@ button.addEventListener ('click', function(evt) {
     };
 });
 
-const swiper = new Swiper('.slider-list', {
-   slidesPerView: '1.2',
-   
-   pagination: {
-      el: '.swiper-pagination',
-      clickable: true, 
-   },
-});
+let screenWidth = document.querySelector('.page-container');
+
+if (screenWidth.clientWidth < 768) {
+
+  swiperPage = new Swiper('.slider-list', {
+      slidesPerView: '1.2',
+      
+      pagination: {
+         el: '.swiper-pagination',
+         clickable: true, 
+      }
+
+   }); 
+};
 
 window.addEventListener ('resize', function() {
-
-   let screenWidth = document.querySelector('.page-container');
-   console.log(screenWidth.clientWidth);
-
-   if (screenWidth.clientWidth > 767) {
-      swiper.disable()
-      // swiper.destroy(false, true)
-   } else if (screenWidth.clientWidth <= 767) {
-      swiper.enable();
-   }
-})
+ if (screenWidth.clientWidth < 768 && !swiperPage) {
+   console.log('< 768');
+   swiperPage = new Swiper('.slider-list', {
+      slidesPerView: '1.2',
+      
+      pagination: {
+         el: '.swiper-pagination',
+         clickable: true, 
+      }
+   }); 
+ } else if (screenWidth.clientWidth>=768 && swiperPage){
+   console.log('>= 768');
+   swiperPage.disable();
+   swiperPage.destroy(false, true);
+   swiperPage = null;
+ }
+});

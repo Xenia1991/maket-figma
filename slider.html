@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="maket, figma, slider">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="slider.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Slider</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
                    ремонт техники различных брендов 
                 </p>
             </section>
-            <div class="slider-list">
+            <section class="slider-list swiper">
                 <ul class="brand-list brand-list--hidden swiper-wrapper">
                     <li class="brand-item swiper-slide">
                         <a href="#" class="brand-item__link">
@@ -85,8 +85,8 @@
                         </a>
                     </li>
                 </ul>
-                <div class="swiper-pagination"></div>
-            </div>
+                <div class="pagination swiper-pagination"></div>
+            </section>
             <div class="button-container">
                <button class="button">
                     <img src="/images/expand.png" alt="Up" class="button__img">
