@@ -1,10 +1,9 @@
 let repairSwiper;
 let repairContainerElement = document.querySelector('.repair-list');
 let buttonElement = document.querySelector('.button');
-let screenWidth = document.querySelector('.page-container');
+let pageContainerElement = document.querySelector('.page-container');
 
-if (screenWidth.clientWidth < 768) {
-   
+if (pageContainerElement.clientWidth < 768) {
     repairSwiper = new Swiper('.swiper', {
        
        spacebetween: '16',
@@ -19,8 +18,7 @@ if (screenWidth.clientWidth < 768) {
  };
 
  let resizeWindow = function () {
-
-    if (screenWidth.clientWidth < 768 && !repairSwiper) {
+    if (pageContainerElement.clientWidth < 768 && !repairSwiper) {
        repairSwiper = new Swiper('.swiper', {
           slidesPerView: '1.2',
           
@@ -29,16 +27,14 @@ if (screenWidth.clientWidth < 768) {
              clickable: true, 
           }
        }); 
-    } else if (screenWidth.clientWidth>=768 && repairSwiper) {
+    } else if (pageContainerElement.clientWidth>=768 && repairSwiper) {
        repairSwiper.disable();
        repairSwiper.destroy(false, true);
        repairSwiper = null;
     }
-
  }
 
 let openRepairMenu = function () {
-
     if (repairContainerElement.classList.contains('repair-list--hidden')) {
 
         repairContainerElement.classList.remove('repair-list--hidden');
@@ -62,7 +58,6 @@ let openRepairMenu = function () {
         buttonImg.src = '/images/expand.png';
 
     }
-
 }
 
  window.addEventListener ('resize', resizeWindow);
