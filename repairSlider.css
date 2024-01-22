@@ -149,7 +149,7 @@ body {
         display: block;
         width: 768px;
         background-color: #F8F8F8;
-        padding-top: 24px;
+        padding-top: 15px;
     }
 
     .button {
@@ -187,10 +187,6 @@ body {
     .repair-list--hidden {
         width: 1120px;
         height: 150px!important;
-    }
-
-    .repair-list--unhidden {
-        height: 310px!important;
     }
 
     .button-container {
