@@ -1,6 +1,6 @@
 let buttonElement = document.querySelector('.button');
 let sliderElement = document.querySelector('.brand-list');
-let screenWidth = document.querySelector('.page-container');
+let containerElement = document.querySelector('.page-container');
 let swiperPage;
 
 let openBrandMenu = function () {
@@ -32,7 +32,7 @@ let openBrandMenu = function () {
 
 let resizeWindow = function () {
 
-   if (screenWidth.clientWidth < 768 && !swiperPage) {
+   if (containerElement.clientWidth < 768 && !swiperPage) {
       swiperPage = new Swiper('.slider-list', {
          slidesPerView: '1.2',
          
@@ -41,7 +41,7 @@ let resizeWindow = function () {
             clickable: true, 
          }
       }); 
-   } else if (screenWidth.clientWidth>=768 && swiperPage) {
+   } else if (containerElement.clientWidth>=768 && swiperPage) {
       swiperPage.disable();
       swiperPage.destroy(false, true);
       swiperPage = null;
@@ -49,7 +49,7 @@ let resizeWindow = function () {
    
 }
 
-if (screenWidth.clientWidth < 768) {
+if (containerElement.clientWidth < 768) {
    
    swiperPage = new Swiper('.slider-list', {
       
