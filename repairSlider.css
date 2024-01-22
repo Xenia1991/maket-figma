@@ -53,7 +53,6 @@ body {
     display: flex;
     margin: 0;
     padding: 16px;
-    /* overflow: hidden; */
 }
 
 .repair-list--hidden {
@@ -110,6 +109,7 @@ body {
 
     .repair-list {
         width: 768px;
+        height: 150px!important;
         display: flex;
         overflow: hidden;
         flex-wrap: wrap;
@@ -119,11 +119,29 @@ body {
 
     .repair-list--hidden {
         width: 768px;
-        height: 180px;
+        height: 150px!important;
         display: flex;
         overflow: hidden;
         flex-wrap: wrap;
         box-sizing: content-box;
+    }
+
+    .repair-list--unhidden {
+        height: 480px!important;
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: content-box;
+    }
+
+    .repair-item {
+        list-style: none;
+        height: auto!important;
+        width: auto!important;
+    }
+
+    .swiper-slide {
+        width: 224px;
     }
 
     .button-container {
@@ -150,19 +168,6 @@ body {
     .button-text {
         display: block;
     }
-
-    .repair-list--unhidden {
-        width: 768px;
-        display: flex;
-        overflow: hidden;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        background-color: #F8F8F8;
-        margin: 0;
-        padding: 16px;
-        padding-right: 0;
-        gap: 16px;
-    }
 }
 
 @media (min-width: 1120px) {
@@ -180,6 +185,11 @@ body {
 
     .repair-list--hidden {
         width: 1120px;
+        height: 150px!important;
+    }
+
+    .repair-list--unhidden {
+        height: 310px!important;
     }
 
     .button-container {
