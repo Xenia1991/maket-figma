@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Medium.woff') format('woff'),
+    url('font/TTLakes-Medium.ttf') format('truetype'),
+    url('font/TTLakes-Medium.eot') format('embeddedopentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Bold.woff') format('woff'),
+    url('font/TTLakes-Bold.ttf') format('truetype'),
+    url('font/TTLakes-Bold.eot') format('embeddedopentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.page-container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    font-family: "TTLakes";
+}
+
+.title {
+    width: 320px;
+    margin: 0;
+    background-image: linear-gradient(-270deg, #F8F8F8 0%, #FFF 98.61%);
+}
+
+.title__content {
+    margin: 0;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7E7E82;
+}
+
+.screen--medium {
+    display: none;
+}
+
+.screen--small {
+    width: 260px;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    margin-left: 16px;
+}
+
+.price-section {
+    display: block;
+    background-color: #FFF;
+}
+
+.price-section__header {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.price-section__content {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-element {
+    display: flex;
+}
+
+.swiper-btn {
+    align-self: flex-end;
+    width: 119px;
+    height: 22px;
+}
