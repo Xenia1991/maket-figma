@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Medium.woff') format('woff'),
+    url('font/TTLakes-Medium.ttf') format('truetype'),
+    url('font/TTLakes-Medium.eot') format('embeddedopentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Bold.woff') format('woff'),
+    url('font/TTLakes-Bold.ttf') format('truetype'),
+    url('font/TTLakes-Bold.eot') format('embeddedopentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.page-container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    font-family: "TTLakes";
+}
+
+.title {
+    width: 320px;
+    margin: 0;
+    background-image: linear-gradient(-270deg, #F8F8F8 0%, #FFF 98.61%);
+}
+
+.title__content {
+    margin: 0;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7E7E82;
+}
+
+.screen--medium {
+    display: none;
+}
+
+.screen--small {
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.price-section {
+    width: 260px;
+    height: 210px;
+    box-sizing: border-box;
+    display: block;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.price-section__header {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: #7E7E82;
+}
+
+.price-section__content {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.flex-element {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content:space-between;
+}
+
+.swiper-btn {
+    display: flex;
+    width: 119px;
+    height: 28px;
+    font-family: "TTLakes";
+    margin: 0;
+    padding-left: 9px;
+    color: white;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 70px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.time {
+    display: block;
+}
+
+.swiper-btn__text {
+    display: block;
+    align-self: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#pagination {
+    position: absolute;
+    bottom: 635px;
+    z-index: 10;
+}
+
+.extrainfo {
+    width: 320px;
+    height: auto;
+    margin: 15px;
+    position: relative;
+}
+
+.extrainfo-btn {
+    display: flex;
+    border: none;
+    background-color: inherit;
+    height: 42px;
+}
+
+.extrainfo-btn__text {
+    display: block;
+    width: 190px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.extrainfo-btn__img {
+    display: block;
+    align-self: flex-end;
+    position: absolute;
+    left: 105px;
+}
+
+@media (min-width: 768px) {
+    .page-container {
+        width: 768px;
+    }
+    
+    .title {
+        width: 768px;
+    }
+
+    .screen--small {
+        display: none;
+    }
+
+    #pagination {
+        display: none;
+    }
+
+    .screen--medium {
+        display: block;
+
+    }
+
+    .prices-table {
+        width: 758px;
+        margin-left: 5px;
+    }
+
+    .table-head {
+        display: flex;
+        color: #7E7E82;
+        font-size: 14px;
+        line-height: 3em;
+        justify-content: space-between;
+    }
+
+    .table-head__row {
+        display: block;
+        text-align: start;
+        padding-left: 10px;
+    }
+
+    .table-head__row:nth-child(2) {
+        margin-left: 110px;
+    }
+
+    .table-head__row:nth-child(3) {
+        margin-left: -80px;
+    }
+
+    .table-body {
+        color: #1B1C21;
+        font-size: 14px;
+        line-height: 3.7em;
+        background-color: white;
+    }
+
+    .table-body__row {
+        display: flex;
+        color: #7E7E82;
+        font-size: 14px;
+        justify-content: space-between;
+    }
+
+    .divider {
+        width: 740px;
+        height: 1px;
+        background-color: #EAEAEA;
+        margin-left: 10px;
+    }
+
+    .table-body__column:first-child {
+        width: 350px;
+        padding-left: 10px;
+    }
+
+    .table-btn {
+        display: flex;
+        width: 119px;
+        height: 28px;
+        font-family: "TTLakes";
+        margin: 0;
+        padding-left: 9px;
+        color: white;
+        background-color: #FF3E79;
+        border: none;
+        border-radius: 70px;
+        box-sizing: border-box;
+        align-self: center;
+        margin-top: 12px;
+    }
+
+    .table-btn__text {
+        display: block;
+        width: 190px;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: start;
+    }
+
+    .extrainfo {
+        width: 480px;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    .extrainfo-btn {
+        display: flex;
+        border: none;
+        background-color: inherit;
+        height: 42px;
+    }
+
+    .extrainfo-btn__text {
+        width: 290px;
+        margin-top: 3px;
+    }
+    
+    .extrainfo-btn__img {
+        align-self: flex-start;
+        position: absolute;
+        left: 295px;
+    }   
+}
+
+@media (min-width: 1120px) {
+    .page-container {
+        width: 1120px;
+    }
+    
+    .title {
+        width: 1120px;
+    }
+
+    .screen--small {
+        display: none;
+    }
+
+    #pagination {
+        display: none;
+    }
+
+    .screen--medium {
+        display: block;
+
+    }
+
+    .prices-table {
+        width: 1105px;
+        margin-right: 5px;
+    }
+
+    .table-body__row {
+        position: relative;
+    }
+
+    .table-head__row:nth-child(2) {
+        margin-left: 250px;
+    }
+
+    .table-head__row:nth-child(3) {
+        margin-left: 10px;
+    }
+
+    .table-btn {
+        position: absolute;
+        left: 980px;
+    }
+
+    .divider {
+        width: 1080px;
+        margin-left: 10px;
+    }
+
+    .extrainfo {
+        width: 480px;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    .extrainfo-btn {
+        display: flex;
+        border: none;
+        background-color: inherit;
+        height: 42px;
+    }
+}
