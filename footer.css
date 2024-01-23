@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Medium.woff') format('woff'),
+    url('font/TTLakes-Medium.ttf') format('truetype'),
+    url('font/TTLakes-Medium.eot') format('embeddedopentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Bold.woff') format('woff'),
+    url('font/TTLakes-Bold.ttf') format('truetype'),
+    url('font/TTLakes-Bold.eot') format('embeddedopentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.page-container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    font-family: "TTLakes";
+    font-size: 14px;
+}
+
+.page-footer {
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #7E7E82;
+}
+
+.page-footer__copyright {
+    margin-bottom: 16px;
+}
+
+.page-footer__conf {
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .page-container {
+        width: 768px;
+    }
+    
+    .page-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .page-footer__copyright {
+        text-align: left;
+    }
+    
+    .page-footer__oferta {
+        text-align: right;
+    } 
+}
+
+@media (min-width: 1120px) {
+    .page-container {
+        width: 1120px;
+    }
+}
