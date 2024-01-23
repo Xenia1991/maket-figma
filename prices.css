@@ -273,3 +273,66 @@
         left: 295px;
     }   
 }
+
+@media (min-width: 1120px) {
+    .page-container {
+        width: 1120px;
+    }
+    
+    .title {
+        width: 1120px;
+    }
+
+    .screen--small {
+        display: none;
+    }
+
+    #pagination {
+        display: none;
+    }
+
+    .screen--medium {
+        display: block;
+
+    }
+
+    .prices-table {
+        width: 1105px;
+        margin-right: 5px;
+    }
+
+    .table-body__row {
+        position: relative;
+    }
+
+    .table-head__row:nth-child(2) {
+        margin-left: 250px;
+    }
+
+    .table-head__row:nth-child(3) {
+        margin-left: 10px;
+    }
+
+    .table-btn {
+        position: absolute;
+        left: 980px;
+    }
+
+    .divider {
+        width: 1080px;
+        margin-left: 10px;
+    }
+
+    .extrainfo {
+        width: 480px;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    .extrainfo-btn {
+        display: flex;
+        border: none;
+        background-color: inherit;
+        height: 42px;
+    }
+}
