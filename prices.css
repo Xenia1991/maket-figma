@@ -123,6 +123,7 @@
     width: 320px;
     height: auto;
     margin: 15px;
+    position: relative;
 }
 
 .extrainfo-btn {
@@ -139,14 +140,13 @@
     font-size: 16px;
     font-weight: 500;
     text-align: start;
-    position: relative;
 }
 
 .extrainfo-btn__img {
     display: block;
     align-self: flex-end;
     position: absolute;
-    left: 445px;
+    left: 105px;
 }
 
 @media (min-width: 768px) {
@@ -168,10 +168,12 @@
 
     .screen--medium {
         display: block;
+
     }
 
     .prices-table {
-        min-width: 768px;
+        width: 758px;
+        margin-left: 5px;
     }
 
     .table-head {
@@ -189,7 +191,7 @@
     }
 
     .table-head__row:nth-child(2) {
-        margin-left: 130px;
+        margin-left: 110px;
     }
 
     .table-head__row:nth-child(3) {
@@ -199,7 +201,7 @@
     .table-body {
         color: #1B1C21;
         font-size: 14px;
-        line-height: 3em;
+        line-height: 3.7em;
         background-color: white;
     }
 
@@ -207,8 +209,14 @@
         display: flex;
         color: #7E7E82;
         font-size: 14px;
-        line-height: 3em;
         justify-content: space-between;
+    }
+
+    .divider {
+        width: 740px;
+        height: 1px;
+        background-color: #EAEAEA;
+        margin-left: 10px;
     }
 
     .table-body__column:first-child {
@@ -216,4 +224,52 @@
         padding-left: 10px;
     }
 
+    .table-btn {
+        display: flex;
+        width: 119px;
+        height: 28px;
+        font-family: "TTLakes";
+        margin: 0;
+        padding-left: 9px;
+        color: white;
+        background-color: #FF3E79;
+        border: none;
+        border-radius: 70px;
+        box-sizing: border-box;
+        align-self: center;
+        margin-top: 12px;
+    }
+
+    .table-btn__text {
+        display: block;
+        width: 190px;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: start;
+    }
+
+    .extrainfo {
+        width: 480px;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    .extrainfo-btn {
+        display: flex;
+        border: none;
+        background-color: inherit;
+        height: 42px;
+    }
+
+    .extrainfo-btn__text {
+        width: 290px;
+        margin-top: 3px;
+    }
+    
+    .extrainfo-btn__img {
+        align-self: flex-start;
+        position: absolute;
+        left: 295px;
+    }   
 }
