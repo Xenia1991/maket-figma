@@ -20,8 +20,9 @@
     width: 320px;
     height: auto;
     margin: 0 auto;
-    background-color: rgb(231, 221, 221);
+    background-color: white;
     font-family: "TTLakes";
+    border: 1px solid transparent;
 }
 
 .feedback-close {
@@ -58,6 +59,7 @@
     font-family: "TTLakes";
     border: 1px solid #EAEAEA;
     border-radius: 8px;
+    font-size: 16px;
 }
 
 .feedback-form__message-input{
@@ -65,7 +67,8 @@
     margin-bottom: 4px;
     width: 280px; 
     border: 1px solid #EAEAEA;
-    border-radius: 8px;  
+    border-radius: 8px; 
+    font-size: 16px; 
 }
 
 .feedback-text {
@@ -80,11 +83,52 @@
 }
 
 .feedback-button {
+    display: flex;
     margin: 27px;
     margin-left: 160px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 14px;
+    justify-content: space-between;
 }
 
 .feedback-button__text {
     text-transform: uppercase;
-    
+    display: block;
+    align-self: center;
+    color: white;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .page-container {
+        width: 440px;
+        height: 940px;
+        position: relative;
+        box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+    }
+
+    .feedback-close {
+        position: absolute;
+        left: -80px;
+        top: 4px;
+    }
+
+    .feedback-headline {
+        margin-top: 40px;
+    }
+
+    .feedback-form__name-input,
+    .feedback-form__phone-input,
+    .feedback-form__email-input {
+    width: 400px;
+    }
+
+    .feedback-form__message-input{
+        width: 400px;
+    }
+
+    .feedback-button {
+        margin-left: 300px;
+    }
 }
