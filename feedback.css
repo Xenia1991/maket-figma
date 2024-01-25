@@ -56,12 +56,16 @@
     width: 280px;
     height: 48px;
     font-family: "TTLakes";
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
 }
 
 .feedback-form__message-input{
     margin-left: 16px;
     margin-bottom: 4px;
-    width: 280px;   
+    width: 280px; 
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;  
 }
 
 .feedback-text {
@@ -77,5 +81,10 @@
 
 .feedback-button {
     margin: 27px;
-    margin-left: 180px;
+    margin-left: 160px;
+}
+
+.feedback-button__text {
+    text-transform: uppercase;
+    
 }
