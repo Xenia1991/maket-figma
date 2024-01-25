@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Medium.woff') format('woff'),
+    url('font/TTLakes-Medium.ttf') format('truetype'),
+    url('font/TTLakes-Medium.eot') format('embeddedopentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Bold.woff') format('woff'),
+    url('font/TTLakes-Bold.ttf') format('truetype'),
+    url('font/TTLakes-Bold.eot') format('embeddedopentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.page-container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(231, 221, 221);
+    font-family: "TTLakes";
+}
+
+.feedback-close {
+    width: auto;
+    padding-top: 25px;
+    margin-left: 16px;
+}
+
+.feedback-headline {
+    position: relative;
+}
+
+.feedback-headline__divider {
+    width: 4px;
+    height: 40px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 2px;
+}
+
+.feedback-headline__text {
+    margin-left: 16px;
+    font-size: 24px;
+    color: #1B1C21;
+}
+
+.feedback-form__name-input,
+.feedback-form__phone-input,
+.feedback-form__email-input {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    width: 280px;
+    height: 48px;
+    font-family: "TTLakes";
+}
+
+.feedback-form__message-input{
+    margin-left: 16px;
+    margin-bottom: 4px;
+    width: 280px;   
+}
+
+.feedback-text {
+    margin-left: 16px;
+    font-size: 14px;
+    color: #7E7E82;
+    line-height: 0.9;
+}
+
+.feedback-text--pink {
+    color: #FF3E79;
+}
+
+.feedback-button {
+    margin: 27px;
+    margin-left: 180px;
+}
