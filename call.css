@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Medium.woff') format('woff'),
+    url('font/TTLakes-Medium.ttf') format('truetype'),
+    url('font/TTLakes-Medium.eot') format('embeddedopentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes';
+    src: url('font/TTLakes-Bold.woff') format('woff'),
+    url('font/TTLakes-Bold.ttf') format('truetype'),
+    url('font/TTLakes-Bold.eot') format('embeddedopentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.page-container {
+    width: 320px;
+    height: auto;
+    margin: 0 auto;
+    background-color: white;
+    font-family: "TTLakes";
+    border: 1px solid transparent;
+}
+
+.call-close {
+    width: auto;
+    padding-top: 25px;
+    margin-left: 16px;
+}
+
+.call-headline {
+    position: relative;
+}
+
+.call-headline__divider {
+    width: 4px;
+    height: 40px;
+    background-color: aqua;
+    position: absolute;
+    bottom: 2px;
+}
+
+.call-headline__text {
+    margin-left: 16px;
+    font-size: 24px;
+    color: #1B1C21;
+}
+
+.call-form__phone-input {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    width: 280px;
+    height: 48px;
+    font-family: "TTLakes";
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.call-text {
+    margin-left: 16px;
+    font-size: 14px;
+    color: #7E7E82;
+    line-height: 0.9;
+}
+
+.call-text--pink {
+    color: #FF3E79;
+}
+
+.call-button {
+    display: flex;
+    margin: 27px;
+    margin-left: 160px;
+    background-color: #FF3E79;
+    border: none;
+    border-radius: 14px;
+    justify-content: space-between;
+}
+
+.call-button__text {
+    text-transform: uppercase;
+    display: block;
+    align-self: center;
+    color: white;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .page-container {
+        width: 440px;
+        height: 940px;
+        position: relative;
+        box-shadow: -16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+    }
+
+    .call-close {
+        position: absolute;
+        left: -80px;
+        top: 4px;
+    }
+
+    .call-headline {
+        margin-top: 40px;
+    }
+
+    .call-form__phone-input {
+    width: 400px;
+    }
+
+    .call-form__message-input{
+        width: 400px;
+    }
+
+    .call-button {
+        margin-left: 300px;
+    }
+}
