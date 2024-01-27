@@ -29,6 +29,8 @@
     width: auto;
     padding-top: 25px;
     margin-left: 16px;
+    border: none;
+    background-color: transparent;
 }
 
 .call-headline {
